@@ -15,6 +15,17 @@ Getting location updates requires lots of boilerplate code in Android, You need 
 
 In your `build.gradle`:
 
+Add the following maven{} line to your **PROJECT** build.gradle file
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }   // add this line
+		}
+	}
+```
+
 **com.google.android.gms:play-services-location** dependency also needs to be added like this
 
 **x.x.x** can be replaced with google play service version your app is using [versions information available here](https://developers.google.com/android/guides/releases) 
